@@ -1,0 +1,22 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+python-ml-service/venv/
+
+# Node modules
+node_modules/
+node-api-service/node_modules/
+
+# Secrets & configs
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model binaries & OS files
+*.joblib
+*.pkl
+.DS_Store

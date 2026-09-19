@@ -1,0 +1,18 @@
+# Virtual environments
+venv/
+.venv/
+env/
+python-ml-service/venv/
+
+# Python cache & build files
+__pycache__/
+*.py[cod]
+
+# Machine learning binaries & datasets
+*.joblib
+*.pkl
+data/*.csv
+
+# Node dependencies & environment files
+node_modules/
+.env

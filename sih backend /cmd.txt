@@ -1,0 +1,41 @@
+# for first time only 
+
+# 1. Navigate to the ML service folder
+cd python-ml-service
+
+# 2. Create and activate a clean virtual environment
+python3 -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+
+# 3. Install Python dependencies
+pip install --upgrade pip
+pip install fastapi uvicorn pydantic scikit-learn xgboost pandas numpy joblib
+
+# 4. Train/generate the initial ML models (if not pre-packaged)
+python ml/training/train_models.py
+
+# 5. Start the FastAPI microservice
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+
+
+
+____________________________________________________________________________
+
+# 1. Navigate to the Node gateway folder
+cd node-api-service
+
+# 2. Install Node packages
+npm install
+
+# 3. Create the environment configuration file
+cat << 'EOF' > .env
+PORT=5000
+ML_SERVICE_URL=http://127.0.0.1:8000/api/v1
+JWT_SECRET=moil_super_secret_jwt_key_2026
+EOF
+
+# 4. Start the Node API Gateway
+npm run dev
+
+

@@ -1,0 +1,30 @@
+{
+    "accuracy": 0.9975,
+    "precision": 0.9975,
+    "recall": 1.0,
+    "f1": 0.9987484355444305,
+    "roc_auc": 0.9598997493734336,
+    "confusion_matrix": [
+        [
+            0,
+            1
+        ],
+        [
+            0,
+            399
+        ]
+    ],
+    "training_samples": 1600,
+    "testing_samples": 400,
+    "features": [
+        "Pit_Code",
+        "Rainfall_mm",
+        "Water_Logging_Hours",
+        "Active_Dumpers",
+        "Active_Excavators",
+        "Equipment_Availability",
+        "Blasting_Delay_Flag",
+        "Haul_Distance_km",
+        "Shift_Efficiency"
+    ]
+}

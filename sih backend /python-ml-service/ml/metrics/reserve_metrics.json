@@ -1,0 +1,27 @@
+{
+    "baseline": {
+        "MAE": 7.7805,
+        "RMSE": 9.5201,
+        "R2": -0.0
+    },
+    "random_forest": {
+        "MAE": 4.6504,
+        "RMSE": 5.6944,
+        "R2": 0.6422
+    },
+    "training_samples": 793,
+    "testing_samples": 207,
+    "features": [
+        "Latitude",
+        "Longitude",
+        "Depth_m",
+        "Surface_NDVI",
+        "Surface_NDWI",
+        "Slope_Deg",
+        "Fracture_Density",
+        "Rock_Hardness",
+        "Distance_to_Fault_m",
+        "Fe_Content",
+        "SiO2_Content"
+    ]
+}
